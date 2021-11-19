@@ -1,0 +1,130 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: lightseagreen;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.add-todo-wrapper {
+    display: flex;
+    width: 500px;
+    min-height: 40px;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.input-wrapper {
+    width: 80%;
+    box-shadow: rgb(14 1 1) 0 8px 24px;
+    outline: none;
+    border: none;
+}
+
+.input-wrapper input {
+    width: 100%;
+    height: 33px;
+    font-size: 25px;
+    outline: none;
+    border: none;
+}
+
+.button-wrapper {
+    margin: 30px 0;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.button-wrapper button {
+    border-radius: 25px;
+    border: none;
+    padding: 10px 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#clearAll-task-btn:hover{
+    background-color: crimson;
+    box-shadow: rgb(14, 1, 1) 0 8px 24px;
+    transition: 0.1s;
+}
+
+#add-task-btn:hover{
+    background-color: lime;
+    box-shadow: rgb(14, 1, 1) 0 8px 24px;
+    transition: 0.1s;
+}
+
+.todo-item {
+    display: flex;
+    width: 500px;
+    min-height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #cb8f38;
+}
+
+.todo-item .checked {
+    background-color: darkgrey;
+    opacity: 0.5;
+}
+
+.todo-item.delition {
+    animation: opacity 1s ease-in-out;
+}
+
+.description {
+    width: 80%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    color: floralwhite;
+}
+
+.buttons input {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.buttons button {
+    outline: none;
+    border: none;
+    background-color: crimson;
+    color: #ffff;
+    cursor: pointer;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
