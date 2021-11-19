@@ -47,7 +47,7 @@ h1 {
     margin: 30px 0;
     width: 20%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
 }
 
